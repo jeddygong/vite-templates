@@ -46,6 +46,8 @@
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-prettier": "^4.0.0",
         "eslint-plugin-vue": "^8.5.0",
+        "husky": "^7.0.4",
+        "lint-staged": "^12.3.7",
         "prettier": "^2.6.1",
         "typescript": "^4.5.4",
         "vite": "^2.8.0",
