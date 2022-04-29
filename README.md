@@ -1,7 +1,7 @@
 # vite-templates（模板大全）
-  > <font style="color:red">**该仓库是所有用 vite 构建工具创建的相关项目模板（持续更新）**</font>
+  > ## 该仓库是所有用 vite 构建工具创建的相关项目模板（持续更新）
   >
-  > <font style="color:red">**如果觉得项目模板不错的话，欢迎 Star 支持就好，感谢大家！**</font>
+  > ## 如果觉得项目模板不错的话，欢迎 Star 支持就好，感谢大家！
 
 
 ## 1. vite-react
