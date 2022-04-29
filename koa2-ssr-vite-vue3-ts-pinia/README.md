@@ -1,9 +1,9 @@
 # 前言
-大家好，我是 [易](https://juejin.cn/user/2305054774145918/posts)，在上一篇文章中，我们有讲到[《如何使用 vite+vue3+ts+pinia+vueuse 打造前端企业级项目》](https://juejin.cn/post/7079785777692934174)，能看的出来很多同学喜欢，今天给大家带来爆肝许久的 `如何使用vite 打造前端 SSR 企业级项目`，希望大家能喜欢！
+大家好，我是 [易](https://juejin.cn/user/2305054774145918/posts)，在上一篇文章中，我们有讲到[《如何使用 vite+vue3+ts+pinia+vueuse 打造前端企业级项目》](https://juejin.cn/post/7079785777692934174)，能看的出来很多同学喜欢，今天给大家带来爆肝许久的 `如何使用 vite 打造前端 SSR 企业级项目`，希望大家能喜欢！
 
 如果大家对 Vite 感兴趣可以去看看专栏： [《Vite 从入门到精通》](https://juejin.cn/column/7074954144817086472)
 
-> <font style="color:red">如果觉得项目模板不错的话，欢迎 Star 支持就好，感谢大家！</font>
+> <font style="color:red">**如果觉得项目模板不错的话，欢迎 Star 支持就好，感谢大家！**</font>
 
 # 了解 SSR
 ## 什么是 SSR
