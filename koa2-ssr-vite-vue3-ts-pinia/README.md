@@ -3,7 +3,8 @@
 
 如果大家对 Vite 感兴趣可以去看看专栏： [《Vite 从入门到精通》](https://juejin.cn/column/7074954144817086472)
 
-> <font style="color:red">**如果觉得项目模板不错的话，欢迎 Star 支持就好，感谢大家！**</font>
+
+> ## 如果觉得项目模板不错的话，欢迎 Star 支持就好，感谢大家！
 
 # 了解 SSR
 ## 什么是 SSR
