@@ -15,7 +15,7 @@
     },
     "config": {
         "commitizen": {
-            "path": "./vite-vue3-ts-pinia/node_modules/cz-customizable"
+            "path": "./node_modules/cz-customizable"
         }
     },
     "lint-staged": {
