@@ -1,0 +1,32 @@
+{
+  "name": "vite-plugin-template",
+  "version": "0.0.1",
+  "description": "A vite plugin template",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "pnpm run build -- --watch --ignore-watch examples",
+    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "example:react": "cd examples/vite-react && pnpm run build",
+    "example:vue2": "cd examples/vite-vue2 && pnpm run build",
+    "example:vue3": "cd examples/vite-vue3 && pnpm run build"
+  },
+  "keywords": [
+    "vite",
+    "plugin"
+  ],
+  "author": "Jeddy",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "bumpp": "^7.1.1",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2",
+    "tsup": "^6.0.1",
+    "typescript": "^4.7.2",
+    "vite": "*"
+  }
+}
