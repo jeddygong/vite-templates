@@ -1,0 +1,25 @@
+{
+    "name": "vite-vue3-ts-pinia",
+    "private": true,
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "vite",
+        "build": "vue-tsc --noEmit && vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@vueuse/core": "^8.2.0",
+        "axios": "^0.26.1",
+        "pinia": "^2.0.12",
+        "vue": "^3.2.25",
+        "vue-router": "^4.0.14"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.23",
+        "@vitejs/plugin-vue": "^2.2.0",
+        "typescript": "^4.5.4",
+        "vite": "link:../../node_modules/vite",
+        "vite-plugin-template": "link:../../",
+        "vue-tsc": "^0.29.8"
+    }
+}
