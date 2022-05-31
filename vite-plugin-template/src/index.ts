@@ -12,32 +12,24 @@ export default function vitePluginTemplate(): PluginOption {
     apply: 'build', // apply 亦可以是一个函数
 
     // 1. vite 独有的钩子：可以在 vite 被解析之前修改 vite 的相关配置。钩子接收原始用户配置 config 和一个描述配置环境的变量env
-    config(config, { command }) {
-      console.log('这里是config钩子');
-    },
+    config(config, { command }) {},
 
     // 2. vite 独有的钩子：在解析 vite 配置后调用。使用这个钩子读取和存储最终解析的配置。当插件需要根据运行的命令做一些不同的事情时，它很有用。
-    configResolved(resolvedConfig) {
-      console.log('这里是configResolved钩子');
-    },
+    configResolved(resolvedConfig) {},
 
     // 4. vite 独有的钩子：主要用来配置开发服务器，为 dev-server (connect 应用程序) 添加自定义的中间件
-    configureServer(server) {
-      console.log('这里是configureServer钩子');
-    },
+    configureServer(server) {},
 
-    // 6. vite 独有的钩子：转换 index.html 的专用钩子。钩子接收当前的 HTML 字符串和转换上下文
-    transformIndexHtml(html) {
-      console.log('这里是configureServer钩子');
-    },
+    // 18的前面. vite 独有的钩子：转换 index.html 的专用钩子。钩子接收当前的 HTML 字符串和转换上下文
+    transformIndexHtml(html) {},
 
     // vite 独有的钩子: 执行自定义HMR更新，可以通过ws往客户端发送自定义的事件
     handleHotUpdate({ file, server }) {},
 
-    // 构建阶段的通用钩子：在服务器启动时被调用：获取、操纵Rollup选项
+    // 3. 构建阶段的通用钩子：在服务器启动时被调用：获取、操纵Rollup选项
     options(options) {},
 
-    // 构建阶段的通用钩子：在服务器启动时被调用：每次开始构建时调用
+    // 5. 构建阶段的通用钩子：在服务器启动时被调用：每次开始构建时调用
     buildStart(options) {},
 
     // 构建阶段的通用钩子：在每个传入模块请求时被调用：创建自定义确认函数，可以用来定位第三方依赖
