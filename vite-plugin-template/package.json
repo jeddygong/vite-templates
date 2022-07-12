@@ -4,7 +4,7 @@
   "description": "A vite plugin template",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "pnpm run build -- --watch --ignore-watch examples",
+    "dev": "pnpm run build --watch --ignore-watch examples",
     "build": "tsup src/index.ts --dts --format cjs,esm",
     "example:react": "cd examples/vite-react && pnpm run build",
     "example:vue2": "cd examples/vite-vue2 && pnpm run build",
