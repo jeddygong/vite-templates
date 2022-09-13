@@ -1,9 +1,3 @@
-/**
- * @description 按需引入element-plus库
- * @author gongjin@addcn.com
- * @created 2021-03-25 14:50:20
- */
-
 import lang from 'element-plus/lib/locale/lang/zh-tw';
 import 'dayjs/locale/zh-tw';
 import {
