@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "esnext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "declaration": true,
+    "declarationDir": "./types",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "noUnusedLocals": true,
+    "paths": {
+      "@vmejs/shared": ["./packages/shared/index.ts"],
+      "@vmejs/shared/*": ["./packages/shared/*"],
+      "@vmejs/core": ["./packages/core/index.ts"],
+      "@vmejs/core/*": ["./packages/core/*"]
+    }
+  },
+  "include": ["packages", "packages/.vitepress/components/*.vue", "packages/.vitepress/*.ts", "meta", "vitest.config.ts", "*.d.ts"],
+  "exclude": ["node_modules", "**/**/*.md", "**/dist", "packages/.test", "packages/_docs", "dist"]
+}

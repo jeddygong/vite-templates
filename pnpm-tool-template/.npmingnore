@@ -1,0 +1,22 @@
+.eslintignore
+.eslintrc
+.gitignore
+.prettierrc
+
+# 配置
+tsconfig.json
+tsup.config.ts
+pnpm-lock.yaml
+pnpm-workspace.yaml
+commitlint.config.ts
+
+# 文件
+node_modules/
+examples/
+types
+coverage
+.changeset
+.husky
+.github
+.vitepress
+.changeset

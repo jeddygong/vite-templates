@@ -1,0 +1,51 @@
+on: # 触发条件
+  # 每当 push 到 main 分支时触发部署
+  push:
+    branches: [main]
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest # 指定运行所需要的虚拟机环境（必填）
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          # 选择要使用的 node 版本
+          node-version: '16'
+          cache: 'pnpm'
+
+      # 如果缓存没有命中，安装依赖
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile --ignore-scripts
+
+      # 运行构建脚本
+      - name: Build vitepress site
+        run: pnpm docs:build
+        env:
+          DOC_ENV: preview
+          NODE_OPTIONS: --max-old-space-size=4096
+
+      # 查看 workflow 的文档来获取更多信息
+      # @see https://github.com/crazy-max/ghaction-github-pages
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2
+        # 环境变量
+        env:
+          # 对应 github 设置的 ACTION_SECRET
+          GITHUB_TOKEN: ${{ secrets.ACTION_SECRET }}
+        with:
+          # 部署到 gh-pages 分支
+          target_branch: gh-pages
+          # 部署目录为 vitepress 的默认输出目录
+          build_dir: packages/.vitepress/dist
