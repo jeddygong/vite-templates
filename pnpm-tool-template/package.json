@@ -1,0 +1,48 @@
+{
+  "name": "vmejs",
+  "version": "0.0.1-alpha.1",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "docs:dev": "vitepress dev packages",
+    "docs:build": "vitepress build packages",
+    "release": "changeset publish",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0 --cache",
+    "lint:fix": "pnpm run lint --fix",
+    "format": "prettier --write --cache .",
+    "test": "vitest test",
+    "coverage": "vitest run --coverage"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,json}": [
+      "pnpm run lint",
+      "pnpm run format"
+    ]
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.25.2",
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "@vitest/coverage-c8": "^0.25.1",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "tsup": "^6.4.0",
+    "typescript": "^4.8.4",
+    "vitepress": "1.0.0-alpha.28",
+    "vitest": "^0.25.1"
+  }
+}

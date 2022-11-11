@@ -1,0 +1,13 @@
+.DS_Store
+.history
+.vscode
+.idea
+.eslintcache
+.pnpm-debug.log
+*.local
+dist
+node_modules
+types
+coverage
+
+.changeset/pre.json

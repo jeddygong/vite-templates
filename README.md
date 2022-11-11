@@ -24,3 +24,6 @@
 ## 7. vite-vue3
   vite + vue3 + typescript 构建的项目模板
 
+## 8. pnpm-tool-template
+  pnpm workspace + typescript 搭建的前端工具库项目模板
+
