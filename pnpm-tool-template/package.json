@@ -17,7 +17,8 @@
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0 --cache",
     "lint:fix": "pnpm run lint --fix",
     "format": "prettier --write --cache .",
-    "test": "vitest test",
+    "test": "vitest run",
+    "test:update": "vitest test",
     "coverage": "vitest run --coverage"
   },
   "lint-staged": {
