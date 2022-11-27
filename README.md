@@ -27,3 +27,5 @@
 ## 8. pnpm-tool-template
   pnpm workspace + typescript 搭建的前端工具库项目模板
 
+## 9. vite-nuxt3-app
+  nuxt3 + vite3  前端 SSR 项目通用模板
