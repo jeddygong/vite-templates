@@ -25,10 +25,10 @@
   "author": "Jeddy",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^17.0.45",
+    "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "@typescript-eslint/parser": "^5.48.1",
-    "bumpp": "^7.2.0",
+    "bumpp": "^8.2.1",
     "eslint": "^8.31.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
