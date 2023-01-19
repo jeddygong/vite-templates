@@ -1,0 +1,15 @@
+packages:
+  - 'packages/*'
+  - 'playground/*'
+  - 'koa2-ssr-vite-vue3-ts-pinia'
+  - 'pnpm-tool-template'
+  - 'vite-nuxt3-app'
+  - 'vite-plugin-template'
+  - 'vite-react'
+  - 'vite-vue2'
+  - 'vite-vue3'
+  - 'vite-vue3-admin'
+  - 'vite-vue3-ts-pinia'
+  - ''
+components:
+  - ''
