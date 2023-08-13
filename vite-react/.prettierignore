@@ -1,0 +1,11 @@
+/build/*
+.local
+.output.js
+.eslintrc.js
+.editorconfig
+/node_modules/**
+
+**/*.svg
+**/*.sh
+
+/public/*
