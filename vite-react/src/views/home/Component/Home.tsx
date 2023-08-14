@@ -1,6 +1,7 @@
 import React, { memo } from 'react'
 import type { ReactNode, FC } from 'react'
 import { useSelector } from 'react-redux'
+import { Button } from 'antd'
 
 interface IProps {
   children?: ReactNode
@@ -17,6 +18,7 @@ const Home: FC<IProps> = () => {
     <div>
       我是home页
       <div>{data}</div>
+      <Button type="primary">Button</Button>
     </div>
   )
 }

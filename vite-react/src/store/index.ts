@@ -2,8 +2,7 @@ import { configureStore } from '@reduxjs/toolkit'
 // 初始化数据
 const initialState = {
   name: 'zayyo',
-  age: 18,
-  sex: '男'
+
 }
 // Reducer：定义如何更新状态
 const rootReducer = (state = initialState, action: any) => {
